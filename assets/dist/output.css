@@ -534,9 +534,79 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.bg-pink-400 {
+.flex {
+  display: flex;
+}
+
+.hidden {
+  display: none;
+}
+
+.h-0 {
+  height: 0px;
+}
+
+.h-0\.5 {
+  height: 0.125rem;
+}
+
+.h-3 {
+  height: 0.75rem;
+}
+
+.w-5 {
+  width: 1.25rem;
+}
+
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.gap-\[6\.25vw\] {
+  gap: 6.25vw;
+}
+
+.whitespace-nowrap {
+  white-space: nowrap;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.border-2 {
+  border-width: 2px;
+}
+
+.border-specialPink {
+  --tw-border-opacity: 1;
+  border-color: rgb(231 110 206 / var(--tw-border-opacity));
+}
+
+.bg-\[\#323232\] {
   --tw-bg-opacity: 1;
-  background-color: rgb(244 114 182 / var(--tw-bg-opacity));
+  background-color: rgb(50 50 50 / var(--tw-bg-opacity));
 }
 
 .bg-specialPink {
@@ -544,14 +614,32 @@ video {
   background-color: rgb(231 110 206 / var(--tw-bg-opacity));
 }
 
+.px-\[22px\] {
+  padding-left: 22px;
+  padding-right: 22px;
+}
+
 .px-\[3\.1vw\] {
   padding-left: 3.1vw;
   padding-right: 3.1vw;
 }
 
+.py-\[10px\] {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 .py-\[2\.8vh\] {
   padding-top: 2.8vh;
   padding-bottom: 2.8vh;
+}
+
+.font-\[\'Open_Sans\'\] {
+  font-family: 'Open Sans';
+}
+
+.font-medium {
+  font-weight: 500;
 }
 
 .uppercase {
@@ -563,6 +651,55 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.h1{
-  font-size: 100px;
+.duration-300 {
+  transition-duration: 300ms;
+}
+
+.ease-out {
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+
+*{
+  box-sizing: border-box;
+}
+
+nav a img{
+  height: 6.2vh;
+  aspect-ratio: 105/68;
+}
+
+.forTopBar{
+  transform: translateY(5px) rotate(45deg);
+}
+
+.forBottomBar{
+  transform: translateY(-5px) rotate(-45deg);
+}
+
+.hover\:border-specialPink:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(231 110 206 / var(--tw-border-opacity));
+}
+
+.hover\:bg-transparent:hover {
+  background-color: transparent;
+}
+
+.hover\:text-specialPink:hover {
+  --tw-text-opacity: 1;
+  color: rgb(231 110 206 / var(--tw-text-opacity));
+}
+
+@media (min-width: 1280px) {
+  .xl\:block {
+    display: block;
+  }
+
+  .xl\:flex {
+    display: flex;
+  }
+
+  .xl\:hidden {
+    display: none;
+  }
 }
