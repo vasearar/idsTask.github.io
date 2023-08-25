@@ -574,6 +574,26 @@ video {
   margin-top: 6.2vh;
 }
 
+.ml-\[22px\] {
+  margin-left: 22px;
+}
+
+.mt-\[\] {
+  margin-top: ;
+}
+
+.mt-\[4vh\] {
+  margin-top: 4vh;
+}
+
+.mb-\[\] {
+  margin-bottom: ;
+}
+
+.mb-\[8vh\] {
+  margin-bottom: 8vh;
+}
+
 .box-border {
   box-sizing: border-box;
 }
@@ -594,16 +614,16 @@ video {
   height: 0.75rem;
 }
 
-.h-40 {
-  height: 10rem;
-}
-
 .h-\[2px\] {
   height: 2px;
 }
 
 .h-\[38px\] {
   height: 38px;
+}
+
+.h-\[50vh\] {
+  height: 50vh;
 }
 
 .h-fit {
@@ -617,10 +637,6 @@ video {
 
 .h-screen {
   height: 100vh;
-}
-
-.w-40 {
-  width: 10rem;
 }
 
 .w-\[20px\] {
@@ -642,6 +658,22 @@ video {
 
 .w-screen {
   width: 100vw;
+}
+
+.w-\[\] {
+  width: ;
+}
+
+.w-\[57\%\] {
+  width: 57%;
+}
+
+.w-\[43\%\] {
+  width: 43%;
+}
+
+.w-\[31\%\] {
+  width: 31%;
 }
 
 .cursor-pointer {
@@ -676,6 +708,14 @@ video {
   gap: 6.25vw;
 }
 
+.gap-\[\] {
+  gap: ;
+}
+
+.gap-\[12\%\] {
+  gap: 12%;
+}
+
 .gap-y-\[7\.4vh\] {
   row-gap: 7.4vh;
 }
@@ -701,14 +741,14 @@ video {
   border-color: rgb(231 110 206 / var(--tw-border-opacity));
 }
 
+.bg-\[\#003C82\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 60 130 / var(--tw-bg-opacity));
+}
+
 .bg-\[\#323232\] {
   --tw-bg-opacity: 1;
   background-color: rgb(50 50 50 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#F0F0F0\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(240 240 240 / var(--tw-bg-opacity));
 }
 
 .bg-\[\#F1F1F1\] {
@@ -719,18 +759,6 @@ video {
 .bg-specialPink {
   --tw-bg-opacity: 1;
   background-color: rgb(231 110 206 / var(--tw-bg-opacity));
-}
-
-.bg-cover {
-  background-size: cover;
-}
-
-.bg-top {
-  background-position: top;
-}
-
-.bg-no-repeat {
-  background-repeat: no-repeat;
 }
 
 .object-cover {
@@ -763,6 +791,11 @@ video {
   padding-bottom: 2.8vh;
 }
 
+.py-\[12vh\] {
+  padding-top: 12vh;
+  padding-bottom: 12vh;
+}
+
 .pt-\[4\.6vh\] {
   padding-top: 4.6vh;
 }
@@ -777,6 +810,10 @@ video {
 
 .text-\[2\.4rem\] {
   font-size: 2.4rem;
+}
+
+.text-\[2rem\] {
+  font-size: 2rem;
 }
 
 .font-bold {
@@ -805,6 +842,10 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.underline {
+  text-decoration-line: underline;
+}
+
 .duration-1000 {
   transition-duration: 1000ms;
 }
@@ -823,6 +864,10 @@ video {
 
 body{
   font-family: 'Open Sans', sans-serif;
+}
+
+html{
+  font-size: 16px;
 }
 
 @media (max-width: 1300px) {
@@ -936,6 +981,10 @@ body{
     font-size: 4.5rem;
     line-height: 1;
   }
+
+  .md\:text-\[1\.75rem\] {
+    font-size: 1.75rem;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -968,5 +1017,10 @@ body{
   .\32xl\:px-\[10\.7vw\] {
     padding-left: 10.7vw;
     padding-right: 10.7vw;
+  }
+
+  .\32xl\:px-\[16\.9vw\] {
+    padding-left: 16.9vw;
+    padding-right: 16.9vw;
   }
 }
