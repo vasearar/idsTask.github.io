@@ -10,18 +10,18 @@ body{
   font-family: 'Open Sans', sans-serif;
 }
 
-nav img{
-  height: 6.2vh;
-  aspect-ratio: 105/68;
-  cursor: pointer;
+@media (max-width: 1300px) {
+  html {
+    font-size: 14px;
+  }
 }
 
 .forTopBar{
-  transform: translateY(5px) rotate(45deg);
+  transform: translateY(4px) rotate(45deg);
 }
 
 .forBottomBar{ 
-  transform: translateY(-5px) rotate(-45deg);
+  transform: translateY(-4px) rotate(-45deg);
 }
 
 .mobileMenu{
@@ -54,6 +54,19 @@ nav img{
 
 .firstSection{
   display: grid;
-  grid-template-columns: 1fr 43%;
-  gap: 3.6vw;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 435px) {
+  .firstSection{
+    grid-template-columns: 100%;
+  }
+
+  .header1, .firstPart{
+    margin: 0;
+  }
+
+  .astronaut{
+    margin-top: 40px;
+  }
 }

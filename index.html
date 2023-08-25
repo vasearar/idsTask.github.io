@@ -18,7 +18,7 @@
 <body class="overflow-x-hidden">
   <div class="overlay z-1"></div>
   <nav class="px-[3.1vw] py-[2.8vh] w-full flex flex-row items-center justify-between box-border">
-    <img src="./assets/media/logo.svg" alt="logo">
+    <img src="./assets/media/logo.svg" alt="logo" class="w-[58px] h-[38px] md:w-[80px] md:h-[52px] xl:w-[105px] xl:h-[68px] cursor-pointer">
     <ul class="flex-row gap-[6.25vw] xl:flex hidden">
       <li class="uppercase"><a href="#" class="hover:text-specialPink duration-300 font-medium ease-out whitespace-nowrap">About us</a></li>
       <li class="uppercase"><a href="#" class="hover:text-specialPink duration-300 font-medium ease-out whitespace-nowrap">Knowledge Management Journey</a></li>
@@ -26,11 +26,11 @@
     </ul>
     <button class="text-white whitespace-nowrap bg-specialPink py-[10px] px-[22px] ease-out duration-300 hover:bg-transparent hover:border-specialPink hover:text-specialPink border-2 border-specialPink xl:block hidden">DOWNLOAD PDF</button>
     <div class="burger z-10 flex h-3 w-fit justify-between flex-col xl:hidden cursor-pointer">
-      <div class="topBar rounded-full w-5 h-0.5 bg-[#323232] ease-out duration-300"></div>
-      <div class="bottomBar rounded-full w-5 h-0.5 bg-[#323232] ease-out duration-300"></div>
+      <div class="topBar rounded-full w-[20px] h-[2px] bg-[#323232] ease-out duration-300"></div>
+      <div class="bottomBar rounded-full w-[20px] h-[2px] bg-[#323232] ease-out duration-300"></div>
     </div>
   </nav>
-  <div class="mobileMenu h-screen absolute bg-[#F1F1F1] flex flex-col justify-center items-center ease-out duration-1000 top-0 -right-full">
+  <div class="mobileMenu h-screen absolute bg-[#F1F1F1] flex flex-col justify-center items-center ease-out duration-1000 top-0 -right-[200%]">
     <ul class="flex flex-col gap-y-[7.4vh] items-center md:items-start">
       <li class="uppercase"><a class="hover:text-specialPink duration-300 font-medium text-[1rem] md:text-3xl ease-out" href="#">ABOUT US</a></li>
       <li class="uppercase"><a class="hover:text-specialPink duration-300 font-medium text-[1rem] md:text-3xl ease-out" href="#">Knowledge Management Journey</a></li>
@@ -39,15 +39,20 @@
     </ul>
   </div>
   <main>
-    <section class="firstSection pt-[4.6vh] w-screen px-[9.3vw]">
-      <div>
-        <h1 class="md:text-7xl text-4xl font-semibold mt-[6.2vh] w-[336px] md:w-[570px]">Welcome to the insert some lorem copy here</h1>
-        <p class="uppercase text-specialPink text-[1re] md:text-2xl mt-[5.5vh] mb-[3.7vh]">Vision, Learning, Collaboration.</p>
-        <i class="text-[1rem] md:text-2xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</i>
+
+    <section class="firstSection pt-[4.6vh] w-screen px-[4.6vw] md:px-[6.7vw] 2xl:px-[10.7vw]">
+      <div class="firstPart ml-0 2xl:ml-[6.2vw] mr-[4.1vw]">
+        <h1 class="header1 md:text-7xl text-[2.4rem] font-bold mt-[6.2vh] w-fit md:w-[570px]">Welcome to the insert some lorem copy here</h1>
+        <p class="uppercase text-specialPink font-semibold text-[1.1rem] md:text-2xl mt-[5.5vh] mb-[3.7vh]">Vision, Learning, Collaboration.</p>
+        <i class="text-[1.1rem] md:text-2xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</i>
       </div>
-      <div class="max-h-[574px] w-full"><img src="./assets/media/astronaut.png" alt="astronaut" class="h-full w-full aspect-square object-cover"></div>
+      <div class="h-full w-full flex items-center">
+        <img src="./assets/media/astronaut.png" alt="astronaut" class="astronaut h-fit w-fit aspect-square object-cover">
     </section>
-    <section></section>
+    
+    <section class="secondSection w-screen h-fit px-[4.6vw] md:px-[6.7vw] 2xl:px-[10.7vw]">
+
+    </section>
 
     <section></section>
 
