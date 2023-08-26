@@ -60,6 +60,14 @@ html{
   grid-template-columns: 1fr 1fr;
 }
 
+.secondSection{
+  height: max(56vh, 500px);
+}
+
+.space{
+  background: url('../media/spaceBackground.png') center/cover no-repeat;
+}
+
 @media (max-width: 435px) {
   .firstSection{
     grid-template-columns: 100%;

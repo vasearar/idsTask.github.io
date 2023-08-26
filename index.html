@@ -17,6 +17,7 @@
   <script src="./assets/script.js" defer></script>
 </head>
 <body class="overflow-x-hidden">
+  <div class="overflow-x-hidden">
   <div class="overlay z-1"></div>
   <nav class="px-[3.1vw] py-[2.8vh] w-full flex flex-row items-center justify-between box-border">
     <img src="./assets/media/logo.svg" alt="logo" class="w-[58px] h-[38px] md:w-[80px] md:h-[52px] xl:w-[105px] xl:h-[68px] cursor-pointer">
@@ -51,11 +52,32 @@
         <img src="./assets/media/astronaut.png" alt="astronaut" class="astronaut h-fit w-fit aspect-square object-cover">
     </section>
     
-    <section class="secondSection w-screen h-[50vh] px-[4.6vw] md:px-[6.7vw] 2xl:px-[10.7vw]">
-
+    <section class="secondSection w-screen sm:flex hidden bg-[#F0F0F0] px-[4.6vw] md:px-[6.7vw] 2xl:px-[10.7vw] mb-[20vh] mt-[12vh]">
+      <div class="w-[37%] h-full text-white bg-[#003C82] flex flex-col pt-[12vh] px-[5.6vw] gap-[6vh]">
+        <h3 class="text-[1.1rem] font-semibold">ABOUT</h3>
+        <h1 class="text-[2rem]">IDS’s Knowledge Management in Action</h1>
+      </div>
+      <div class="space w-[67%] h-full relative">
+        <div class="w-full h-fit bg-[#1996C3] px-[6.7vw] pt-[7vh] pb-[10vh] absolute bottom-0 translate-y-[22%]">
+          <p class="text-[1.1rem] text-white">Sed metus ligula, auctor eget sagittis eu, elementum vel est. Nam in dolor bibendum, mollis felis eget, ullamcorper odio. Praesent nunc nisi, rutrum mollis cursus vel, aliquet a nunc. Sed a varius sapien. Nulla et massa faucibus, pharetra felis at, aliquam neque. Maecenas volutpat malesuada erat eu finibus. Proin in magna id massa pharetra rutrum eu nec est. Etiam ultrices tortor sapien, placerat ultrices nisl viverra non.</p>
+        </div>
+      </div>
     </section>
 
-    <section></section>
+    <section class="secondSectionMobile sm:hidden block mt-[96px] pl-[3.7vw]">
+      <div class="bg-[#003C82] text-white w-full">
+        <h3 class="text-[1.1rem] font-semibold">ABOUT</h3>
+        <h1 class="text-[2rem]">IDS’s Knowledge Management in Action</h1>
+      </div>
+
+      <div>
+        <img src="./assets/media/spaceBackground.png" alt="space" class="w-full h-full">
+      </div>
+
+      <div class="bg-[#1996C3]">
+        <p class="text-[1.1rem] text-white">Sed metus ligula, auctor eget sagittis eu, elementum vel est. Nam in dolor bibendum, mollis felis eget, ullamcorper odio. Praesent nunc nisi, rutrum mollis cursus vel, aliquet a nunc. Sed a varius sapien. Nulla et massa faucibus, pharetra felis at, aliquam neque. Maecenas volutpat malesuada erat eu finibus. Proin in magna id massa pharetra rutrum eu nec est. Etiam ultrices tortor sapien, placerat ultrices nisl viverra non.</p>
+      </div>
+    </section>
 
     <section></section>
 
@@ -82,5 +104,6 @@
     </div>
 
   </footer>
+  </div>
 </body>
 </html>
