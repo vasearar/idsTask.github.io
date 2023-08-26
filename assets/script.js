@@ -25,4 +25,3 @@ document.querySelector("nav img").addEventListener("click", () => {
 //   document.querySelector(".mobileMenu").classList.remove("toScreenFromRight");
 //   document.querySelector("body").classList.remove("noScroll");
 // });
-
