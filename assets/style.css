@@ -67,6 +67,15 @@ html{
   height: max(56vh, 500px);
 }
 
+.plusBtn{
+  height: max(3vw, 30px);
+  width: max(3vw, 30px);
+}
+
+.addSymbol{
+  font-size: max(2vw, 16px);
+}
+
 .space{
   background: url('../media/spaceBackground.png') center/cover no-repeat;
 }
