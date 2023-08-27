@@ -10,18 +10,15 @@ document.querySelector("nav img").addEventListener("click", () => {
   location.reload();
 });
 
+let image = document.querySelector(".fishingAstro");
+image.addEventListener('load', function() {
+  let astroHeight = image.height;
+  document.querySelector(".paddingSquare1").style.height = `${astroHeight}px`;
+  console.log(`${astroHeight}px`);
+});
 
-// let viewportHeight = window.innerHeight;
-// let navHeight = document.querySelector("nav").offsetHeight;
-// document.querySelector(".firstSection").style.height = `${100*(viewportHeight-navHeight)/viewportHeight}vh`;
-
-// window.addEventListener("resize", () => {
-//   viewportHeight = window.innerHeight;
-//   navHeight = document.querySelector("nav").offsetHeight;
-
-//   document.querySelector(".topBar").classList.remove("forTopBar");
-//   document.querySelector(".bottomBar").classList.remove("forBottomBar");
-//   document.querySelector(".overlay").classList.remove("opacityToOverlay");
-//   document.querySelector(".mobileMenu").classList.remove("toScreenFromRight");
-//   document.querySelector("body").classList.remove("noScroll");
-// });
+window.addEventListener("resize", function() {
+  let astroHeight = image.height;
+  document.querySelector(".paddingSquare1").style.height = `${astroHeight}px`;
+  console.log(`${astroHeight}px`);
+});
