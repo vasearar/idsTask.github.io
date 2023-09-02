@@ -14,11 +14,28 @@ let image = document.querySelector(".fishingAstro");
 image.addEventListener('load', function() {
   let astroHeight = image.height;
   document.querySelector(".paddingSquare1").style.height = `${astroHeight}px`;
-  console.log(`${astroHeight}px`);
 });
+
+let leftSquare = document.querySelector(".leftSquare");
+let fishingAstro = document.querySelector(".fishingAstro");
+function updateLeftSquareHeight() {
+  let fishingAstro = document.querySelector(".fishingAstro").offsetHeight;
+  let rightPart = document.querySelector(".rightPart");
+  let computedStyle = window.getComputedStyle(rightPart);
+
+  let rightPartTotalHeight = rightPart.offsetHeight +
+    parseInt(computedStyle.marginTop) +
+    parseInt(computedStyle.marginBottom);
+
+  leftSquare.style.height = `${rightPartTotalHeight - fishingAstro}px`;
+  console.log(`${rightPartTotalHeight}px`);
+}
+
+fishingAstro.addEventListener('load', updateLeftSquareHeight);
+window.addEventListener('resize', updateLeftSquareHeight);
 
 window.addEventListener("resize", function() {
   let astroHeight = image.height;
   document.querySelector(".paddingSquare1").style.height = `${astroHeight}px`;
-  console.log(`${astroHeight}px`);
 });
+
