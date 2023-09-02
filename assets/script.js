@@ -10,32 +10,28 @@ document.querySelector("nav img").addEventListener("click", () => {
   location.reload();
 });
 
-let image = document.querySelector(".fishingAstro");
-image.addEventListener('load', function() {
-  let astroHeight = image.height;
-  document.querySelector(".paddingSquare1").style.height = `${astroHeight}px`;
-});
+const fishingAstroImage = document.querySelector(".fishingAstro");
+const fishingAstroImageMobile = document.querySelector(".fishingAstroMobile");
+const leftSquare = document.querySelector(".leftSquare");
+const paddingSquare1 = document.querySelector(".paddingSquare1");
+const paddingSquare1Mobile = document.querySelector(".paddingSquare1Mobile");
+const rightPart = document.querySelector(".rightPart");
 
-let leftSquare = document.querySelector(".leftSquare");
-let fishingAstro = document.querySelector(".fishingAstro");
+// Function to update left square height
 function updateLeftSquareHeight() {
-  let fishingAstro = document.querySelector(".fishingAstro").offsetHeight;
-  let rightPart = document.querySelector(".rightPart");
-  let computedStyle = window.getComputedStyle(rightPart);
-
-  let rightPartTotalHeight = rightPart.offsetHeight +
+  const fishingAstroHeight = fishingAstroImage.offsetHeight;
+  const fishingAstroHeightMobile = fishingAstroImageMobile.offsetHeight;
+  const computedStyle = window.getComputedStyle(rightPart);
+  const rightPartTotalHeight =
+    rightPart.offsetHeight +
     parseInt(computedStyle.marginTop) +
     parseInt(computedStyle.marginBottom);
-
-  leftSquare.style.height = `${rightPartTotalHeight - fishingAstro}px`;
-  console.log(`${rightPartTotalHeight}px`);
+  leftSquare.style.height = `${rightPartTotalHeight - fishingAstroHeight}px`;
+  paddingSquare1.style.height = `${fishingAstroHeight}px`;
+  paddingSquare1Mobile.style.height = `${fishingAstroHeightMobile}px`;
 }
 
-fishingAstro.addEventListener('load', updateLeftSquareHeight);
+// Event listener for image load and window resize
+fishingAstroImage.addEventListener('load', updateLeftSquareHeight);
 window.addEventListener('resize', updateLeftSquareHeight);
-
-window.addEventListener("resize", function() {
-  let astroHeight = image.height;
-  document.querySelector(".paddingSquare1").style.height = `${astroHeight}px`;
-});
 

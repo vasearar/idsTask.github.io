@@ -80,7 +80,9 @@ html{
   background: url('../media/spaceBackground.png') center/cover no-repeat;
 }
 
+
 @media (max-width: 435px) {
+
   .firstSection{
     grid-template-columns: 100%;
   }
@@ -93,3 +95,4 @@ html{
     margin-top: 40px;
   }
 }
+
