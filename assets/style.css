@@ -80,6 +80,10 @@ html{
   background: url('../media/spaceBackground.png') center/cover no-repeat;
 }
 
+.cronotip{
+  background: linear-gradient(to right, gray 8.4%, white 8.4%, white 91.6%);
+}
+
 @media (max-width: 435px) {
 
   .firstSection{
