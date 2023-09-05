@@ -99,3 +99,15 @@ html{
   }
 }
 
+#outer-circle {
+  animation: rotate infinite linear 15s;
+}
+
+@keyframes rotate {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg);}
+}
+
+.linkArrow p:hover + .material-symbols-outlined {
+  transform: translateX(10px);
+}
