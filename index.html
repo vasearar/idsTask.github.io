@@ -28,13 +28,13 @@
       <li class="uppercase"><a href="#" class="hover:text-specialPink duration-300 font-medium ease-out whitespace-nowrap">Knowledge Solutions</a></li>
     </ul>
     <button class="text-white whitespace-nowrap bg-specialPink py-[10px] px-[22px] ease-out duration-300 hover:bg-transparent hover:border-specialPink hover:text-specialPink border-2 border-specialPink xl:block hidden">DOWNLOAD PDF</button>
-    <div class="burger z-10 flex h-3 w-fit justify-between flex-col xl:hidden cursor-pointer">
+    <div class="burger z-50 flex h-3 w-fit justify-between flex-col xl:hidden cursor-pointer">
       <div class="topBar rounded-full w-[20px] h-[2px] bg-[#323232] ease-out duration-300"></div>
       <div class="bottomBar rounded-full w-[20px] h-[2px] bg-[#323232] ease-out duration-300"></div>
     </div>
   </nav>
 
-  <div class="mobileMenu h-screen absolute bg-[#F1F1F1] flex flex-col justify-center items-center ease-out duration-1000 top-0 -right-[200%]">
+  <div class="mobileMenu h-screen absolute bg-[#F1F1F1] flex flex-col z-40 justify-center items-center ease-out duration-1000 top-0 -right-[200%]">
     <ul class="flex flex-col gap-y-[7.4vh] items-center md:items-start">
       <li class="uppercase"><a class="hover:text-specialPink duration-300 font-medium text-[1rem] md:text-3xl ease-out" href="#">ABOUT US</a></li>
       <li class="uppercase"><a class="hover:text-specialPink duration-300 font-medium text-[1rem] md:text-3xl ease-out" href="#">Knowledge Management Journey</a></li>
@@ -188,13 +188,16 @@
     </section>
 
     <section class="mt-[27vh] md:pr-[6.7vw] 2xl:pr-[10.7vw] 2xl:pl-0 pr-[4.6vw] relative">
-      <div class="text-white p-[5.9vw] h-fit w-[55.5%] bg-[#D84E30] mb-[14vh] absolute">
+      <div class="text-white p-[5.9vw] h-fit ml-[10.7vw] w-[44%] -translate-y-1/2 top-1/2 bg-[#D84E30] mb-[14vh] absolute">
         <h1 class="text-[3.1rem] mb-[2vh]">The IDS</h1>
         <p class="text-xl">Donec tristique dolor non lectus tincidunt, a lacinia libero suscipit. Quisque ultrices ex lectus, non lobortis nibh volutpat at. Vivamus auctor urna at nulla vulputate ultricies. Aliquam dictum est elit, a imperdiet ante sollicitudin et. Suspendisse accumsan non mauris vitae cursus. Nullam posuere dignissim arcu, quis dictum quam tempus eget. Sed scelerisque tortor eu hendrerit aliquam. Nullam maximus auctor vulputate. Maecenas in finibus metus.</p>
       </div>
       <img alt="astroPiss" src="./assets/media/astroPiss.png" class="w-full object-contain">
     </section>
-
+    <section class="flex gap-[16.7vw] py-[8vh] px-[10.7vw] items-center">
+      <p class="text-[1.3rem] ">To learn even more about IDS’s knowledge solutions, check out IDS’s TED-x style talks and podcasts.</p>
+      <button class="text-white bg-specialPink h-fit py-3 px-6 whitespace-nowrap md:px-[6.7vw]">VIEW PODCASTS</button>
+    </section>
   </main>
   <footer class="px-[4.6vw] md:px-[6.7vw] 2xl:px-[16.9vw] bg-[#003C82] w-screen h-fit text-white flex flex-col lg:flex-row py-[12vh] gap-[5vh] lg:gap-[12%]">
 
@@ -213,6 +216,8 @@
       </div>
       <div class="text-[1.1rem]">&copy; 2021 Insomniac Design Study<br>Website created by <a class="underline" href="https://www.insomniacdesign.com/">Insomniac Design, Inc.</a></div>
     </div>
+
+
 
   </footer>
 </body>
