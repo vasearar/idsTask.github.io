@@ -123,7 +123,7 @@
       <p class="text-[1.1rem] overflow-hidden font-semibold">Duis at enim suscipit, luctus nunc eu, varius lacus. Pellentesque habitant ...</p>
     </div>
 
-    <section class="fourthSection w-full min-h-screen h-fit bg-[#266299] relative">
+    <section class="fourthSection w-full min-h-screen h-fit bg-[#266299] relative sm:block hidden">
       <img src="./assets/media/backgroundSec3.png" alt="backgroundFigures" class="absolute top-[12vh] h-fit w-full object-cover pointer-events-none">
       <div class="text-white flex gap-[8.3vw] md:gap-[13.5vw] px-[4.6vw] py-[12vh] md:px-[6.7vw] 2xl:pl-[17vw] 2xl:pr-[10.7vw]">
         <div>
@@ -162,7 +162,7 @@
           <h2 class="italic text-[1.5rem] font-semibold mb-[1.6vh]">An institution that learns before it teaches</h2>
           <h3 class="text-[1.1rem]">Summary of stage's key events</h3>
           <p class="text-[1.1rem]">Strengthening knowledge management becomes an imperative as countries demand IDS offer not just lending, but also bespoke knowledge solutions.</p>
-          <a href="#" class="flex items-center gap-5 mt-[3.5vh] linkArrow">
+          <a href="#" class="flex items-center gap-5 mt-[3.5vh] linkArrow md:mb-0 mb-10">
             <p>READ MORE</p>
           <span class="material-symbols-outlined transition duration-300">east</span></a>
         </div>
@@ -171,8 +171,53 @@
         </div>
       </div>
     </section>
+
+    <section class="fourthSectionMobile h-fit bg-[#266299] px-[3.7vw] py-[5vh] text-white">
+      <h1 class="text-[28px]">IDS’s Knowledge Management Journey: Two Decades of Learning, Engagement, and Vision</h1>
+      <h3 class="text-lg my-[4vh]">The first president of Asian Development Bank (ADB), Takeshi Watanabe, often emphasized that the bank was an institution that “learns before it teaches.”</h3>
+      <p class="text-base">Morbi sapien ex, tincidunt ut tincidunt et, luctus ac massa. In non dapibus ante. Nulla facilisi. Nunc sollicitudin viverra nibh nec malesuada. Maecenas elementum, magna eu semper efficitur, mauris lacus rhoncus orci, nec suscipit augue est ac nulla. Maecenas porttitor aliquet augue eget tincidunt. Donec tempor, lacus at accumsan accumsan, purus nisl malesuada sapien, nec placerat augue velit ut felis. Duis at enim suscipit, luctus nunc eu, varius lacus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris eu lacus congue, lacinia leo non, facilisis tortor.</p>
+      <div class="w-full mt-12">
+        <div class="flex justify-between items-center mb-5">
+          <div>1966-2004</div>
+          <div class="w-3 h-3 bg-specialPink rounded-full"></div>
+        </div>
+        <div class="fadeGray w-full h-[1px]"></div>
+      </div>
+      <div class="mt-10">
+        <div class="rounded-full bg-specialPink h-14 w-14 flex justify-center items-center">
+          <img alt="2peopleAndLightBulp" class="aspect-square w-8"  src="./assets/media/2peopleAndLightBulp.png">
+        </div>
+        <h1 class="my-5 text-[28px]">Stage 1: The Vision</h1>
+        <i class="text-lg">An institution that learns before it teaches</i>
+        <h4 class="font-semibold mt-4">Summary of stage’s key events</h4>
+        <p class="mb-10">Strengthening knowledge management becomes an imperative as countries demand ADB offer not just lending, but also bespoke knowledge solutions.</p>
+        <a href="#" class="flex items-center gap-5 mt-[3.5vh] linkArrow md:mb-0 mb-10">
+          <p class="font-semibold">READ MORE</p>
+        <span class="material-symbols-outlined transition duration-300">east</span></a>
+      </div>
       
-    <section class="px-[4.6vw] pt-[33vh] md:px-[6.7vw] 2xl:pl-[17vw] 2xl:pr-[10.7vw] flex">
+      <div class="w-full mt-12">
+        <div class="flex justify-between items-center mb-5">
+          <div>2005-2009</div>
+          <div class="w-3 h-3 bg-specialPink rounded-full"></div>
+        </div>
+        <div class="fadeGray w-full h-[1px]"></div>
+      </div>
+      <div class="mt-10">
+        <div class="rounded-full bg-specialPink h-14 w-14 flex justify-center items-center">
+          <img alt="2peopleAndLightBulp" class="aspect-square w-8"  src="./assets/media/2peopleAndLightBulp.png">
+        </div>
+        <h1 class="my-5 text-[28px]">Stage Two: Expansion</h1>
+        <i class="text-lg">The Strategy 2020 rallying cry for more knowledge</i>
+        <h4 class="font-semibold mt-4">A plan to combat knowledge fatigue</h4>
+        <p class="mb-10">A leveling off in knowledge management performance led to calls for improved incentives for knowledge work and mainstreaming into projects.</p>
+        <a href="#" class="flex items-center gap-5 mt-[3.5vh] linkArrow md:mb-0 mb-10">
+          <p class="font-semibold">READ MORE</p>
+        <span class="material-symbols-outlined transition duration-300">east</span></a>
+      </div>
+    </section>
+      
+    <section class="px-[4.6vw] pt-[33vh] md:px-[6.7vw] 2xl:pl-[17vw] 2xl:pr-[10.7vw] flex flex-col-reverse sm:flex-row">
       <div class="w-[35%]">
         <h2 class="text-5xl mb-5">Space</h2>
         <p class="mb-5">Aliquam ornare mauris ex, sed tincidunt neque facilisis id. Maecenas vitae ante nec massa varius volutpat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent congue orci et nunc ultricies dapibus. Aliquam condimentum porttitor nulla. Phasellus suscipit risus sit amet mi interdum faucibus. Quisque egestas lorem ante, id eleifend velit mattis nec.</p>

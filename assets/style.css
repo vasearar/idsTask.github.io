@@ -59,6 +59,10 @@ html{
   height: 100vh;
 }
 
+.fadeGray{
+  background: linear-gradient(to right, transparent, #D8D8D8);
+}
+
 .firstSection{
   display: grid;
   grid-template-columns: 1fr 1fr;
